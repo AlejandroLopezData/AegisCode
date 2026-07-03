@@ -1,0 +1,7 @@
+#upload to git
+git add .
+git commit -m "uploaded changes"
+git push
+
+#pull changes from git
+git pull
