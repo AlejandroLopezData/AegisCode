@@ -1,0 +1,26 @@
+providers:
+  - type: ollama
+    label: "Ollama (local)"
+    fields:
+      - key: host
+        label: "Host"
+        default: "localhost"
+      - key: port
+        label: "Puerto"
+        default: "11434"
+
+  - type: openai_compatible
+    label: "API compatible con OpenAI"
+    fields:
+      - key: url_base
+        label: "URL base de la API (ej. https://api.ejemplo.com/v1)"
+      - key: api_key_env
+        label: "Variable de entorno con la API key"
+        default_template: "AEGIS_API_KEY_{name}"
+
+  - type: anthropic
+    label: "Anthropic API"
+    fields:
+      - key: api_key_env
+        label: "Variable de entorno con la API key"
+        default_template: "AEGIS_API_KEY_{name}"
