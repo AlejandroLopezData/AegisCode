@@ -1,6 +1,6 @@
 #upload to git
 git add .
-git commit -m "uploaded changes"
+git commit -m "uploading changes"
 git push
 
 #pull changes from git
